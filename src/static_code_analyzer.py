@@ -22,10 +22,11 @@ def get_trees(path, with_file_names=False, with_file_content=False):
     trees = []
     for dir_name, dirs, files in os.walk(path, topdown=True):
         for file in files:
-            if file.endswith('.py'):
-                file_names.append(os.path.join(dir_name, file))
-                if len(file_names) == 100:
-                    break
+            if not file.endswith('.py'):
+                continue
+            file_names.append(os.path.join(dir_name, file))
+            if len(file_names) == 100:
+                break
     print('total %s files' % len(file_names))
     for file_name in file_names:
         with open(file_name, 'r', encoding='utf-8') as attempt_handler:
