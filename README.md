@@ -1,1 +1,2 @@
-# Simple static code analyzer
+Simple static code analyzer
+
