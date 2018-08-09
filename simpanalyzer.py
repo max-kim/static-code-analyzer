@@ -90,4 +90,6 @@ if __name__ == '__main__':
                           default=None)
 
     options, arguments = opt_parser.parse_args(argument_val)
+    if not arguments:
+        raise ValueError('It\'s nothing to analyze. Check parameters.')
     main(arguments, top_size=options.top_size)
