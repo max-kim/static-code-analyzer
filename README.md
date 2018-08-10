@@ -16,8 +16,8 @@ You can install 'simpanalyzer' with these commands:
 Requirements
 ------------
 
-Python 3.6 (or over)
-nltk 3.3
+- Python 3.6 (or over)
+- nltk 3.3
 
 Setting environment:
 ```bash
@@ -58,11 +58,11 @@ if __name__ == '__main__':
             print('word: {}, occurrence: {}'.format(word, occurrence))
 ```
 
-You can check the 'simpanalyzer' results and warnings in logs by path: /<simpanalyzer path>/logs.
+You can check the 'simpanalyzer' results and warnings in logs by path: /\<installed path\>/logs.
 
 
 Other
 -----
 
-This lib is a homewokr in OTUS Python web-dev.
+This lib is a homewokr for OTUS Python web-dev.
 Original link is [here](https://gist.github.com/Melevir/5754a1b553eb11839238e43734d0eb79).
