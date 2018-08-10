@@ -83,7 +83,7 @@ def main(path_list, top_size=None):
 
 
 if __name__ == '__main__':
-    argument_val = sys.argv
+    argument_val = sys.argv[1:]
     opt_parser = OptionParser()
     opt_parser.add_option("-s", "--size", dest="top_size",
                           help="size of most common results from the request", type="int",
